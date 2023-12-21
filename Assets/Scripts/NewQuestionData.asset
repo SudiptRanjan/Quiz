@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddf5c97e7db8d43faa9d9c2acd459047, type: 3}
+  m_Name: NewQuestionData
+  m_EditorClassIdentifier: 
+  allCategories:
+  - categoryName: Easy
+    questions:
+    - questionText: 1+1
+      options:
+      - A.2
+      - B.3
+      - C.4
+      - D.5
+      correctOptionIndex: 0
+  - categoryName: Normal
+    questions:
+    - questionText: 1*1
+      options:
+      - A.2
+      - B.3
+      - C.4
+      - D.5
+      correctOptionIndex: 0
+  - categoryName: Hard
+    questions:
+    - questionText: 1/1
+      options:
+      - A.2
+      - B.3
+      - C.4
+      - D.5
+      correctOptionIndex: 0

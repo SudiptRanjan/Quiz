@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 26
-  productGUID: 765819b227e844d4e93fb2e898fc3a1c
+  productGUID: d4596365a1d574d4086a8eb8db15a931
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: OfficeQuiz
+  productName: PolygonOffice
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -762,14 +762,14 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: OfficeQuiz
+  metroPackageName: PolygonOffice
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: OfficeQuiz
+  metroApplicationDescription: PolygonOffice
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -838,10 +838,10 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: a25f6d83-b1fa-4a45-a631-0ec2044c3a4e
+  cloudProjectId: e9aae0e5-35d4-4b7a-a565-c4a9b41a7281
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: OfficeQuiz
+  projectName: PolygonOffice
   organizationId: sudipt1
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
