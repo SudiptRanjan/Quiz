@@ -122,7 +122,7 @@ public class QuizManager : MonoBehaviour
     public Toggle[] categoryToggles; // Assuming you have N toggles for N categories
 
     private int currentScore = 0;
-    private int selectedCategoryIndex = -1;
+    private string selectedCategory = null;
 
     private List<QuestionData.Question> currentCategoryQuestions;
     private int currentQuestionIndex = 0;
@@ -145,13 +145,13 @@ public class QuizManager : MonoBehaviour
             if (categoryToggles[i].isOn)
             {
                 // Ensure only the selected category is on
-                selectedCategoryIndex = i;
+                selectedCategory = categoryToggles[i].GetComponentInChildren<Text>().text;
                 categoryToggles[i].interactable = false;
                 break;
             }
         }
 
-        if (selectedCategoryIndex != -1)
+        if (!string.IsNullOrEmpty(selectedCategory))
         {
             StartQuizForCategory();
         }
@@ -164,12 +164,24 @@ public class QuizManager : MonoBehaviour
     private void StartQuizForCategory()
     {
         // Get questions for the selected category from the Scriptable Object
-        currentCategoryQuestions = questionData.allCategories[selectedCategoryIndex].questions;
+        currentCategoryQuestions = GetQuestionsForCategory(selectedCategory);
 
         // For simplicity, assume there are 5 questions in each category
         LoadNextQuestion(); // Load the first question
 
-        categoryText.text = "Category: " + selectedCategoryIndex;
+        categoryText.text = "Category: " + selectedCategory;
+    }
+
+    private List<QuestionData.Question> GetQuestionsForCategory(string categoryName)
+    {
+        foreach (var category in questionData.allCategories)
+        {
+            if (category.categoryName == categoryName)
+            {
+                return category.questions;
+            }
+        }
+        return new List<QuestionData.Question>(); // Return an empty list if no matching category is found
     }
 
     public void UpdateScore(bool isCorrect)
@@ -208,3 +220,4 @@ public class QuizManager : MonoBehaviour
         }
     }
 }
+
